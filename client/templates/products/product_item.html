@@ -1,0 +1,12 @@
+<template name="productItem">
+  <div class="product">
+    <div class="post-content">
+      <h3>{{name}}<span>{{price}}$</span></h3>
+      <p>
+        {{description}}
+        <a href="{{pathFor 'productEdit'}}">Edit</a>
+      </p>
+    </div>
+    <a href="{{pathFor 'productPage'}}" class="discuss btn btn-default">Show</a>
+  </div>
+</template>
